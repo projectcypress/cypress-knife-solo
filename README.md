@@ -1,7 +1,7 @@
 popHealth-knife-solo
 ====================
 
-Configuration for installing popHealth via knife-solo
+Repository for easily installing popHealth without a Chef-Server.
 
 Getting Started
 -----
