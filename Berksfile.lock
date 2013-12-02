@@ -1,0 +1,59 @@
+{
+  "sources": {
+    "popHealth": {
+      "locked_version": "0.2.0",
+      "git": "https://github.com/rbclark/popHealth-recipe.git",
+      "ref": "85ed558917dd788be3bd568c33caf68a01996295"
+    },
+    "rvm": {
+      "locked_version": "0.9.1",
+      "git": "git://github.com/fnichol/chef-rvm.git",
+      "ref": "0cd320911c1e568cbf2eeac895a5ef06e5821589"
+    },
+    "mongodb-10gen": {
+      "locked_version": "0.1.10"
+    },
+    "apt": {
+      "locked_version": "2.3.0"
+    },
+    "git": {
+      "locked_version": "2.7.0"
+    },
+    "dmg": {
+      "locked_version": "2.0.8"
+    },
+    "build-essential": {
+      "locked_version": "1.4.2"
+    },
+    "yum": {
+      "locked_version": "2.4.2"
+    },
+    "windows": {
+      "locked_version": "1.11.0"
+    },
+    "chef_handler": {
+      "locked_version": "1.1.4"
+    },
+    "runit": {
+      "locked_version": "1.4.0"
+    },
+    "fail2ban": {
+      "locked_version": "2.0.0"
+    },
+    "firewall": {
+      "locked_version": "0.11.2"
+    },
+    "sudo": {
+      "locked_version": "2.2.2"
+    },
+    "java": {
+      "locked_version": "1.15.4"
+    },
+    "aws": {
+      "locked_version": "1.0.0"
+    },
+    "chef_gem": {
+      "locked_version": "0.1.0"
+    }
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "name": "popHealth",
+  "chef_type": "role",
+  "json_class": "Chef::Role",
+  "description": "Sets up a popHealth server.",
+  "run_list": [
+    "recipe[apt]", "recipe[git]", "recipe[popHealth::default]"
+  ]
+}
