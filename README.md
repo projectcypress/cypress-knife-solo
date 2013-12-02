@@ -15,7 +15,7 @@ This repository is designed to allow a user to easily install popHealth on a rem
 	bundle exec berks install -p cookbooks/
 
 	# Bootstrap the node with the popHealth role (This will install chef, copy required cookbooks, and then run the popHealth role)
-	knife solo bootstrap username@ip-address -r role[popHealth]
+	bundle exec knife solo bootstrap username@ip-address -r role[popHealth]
 
 Troubleshooting
 -----
