@@ -26,23 +26,31 @@ This repository is designed to allow a user to easily install popHealth on a rem
 Customizing the Install
 -----
 
-If you wish to do additional configuration to the popHealth cookbook, the easiest way to do so is by creating a new environment in the environments folder and setting the configuration options from there. An example of one such configuration is located at environments/example.json. All of the available configuration options are listed there, however an explanation of each is given below. If you wish to leave any of the values at their default values, simply do not include them in your overrides.
+If you wish to do additional configuration to the popHealth cookbook, the easiest way to do so is by creating a new environment in the environments folder and setting the configuration options from there. An example of one such configuration is located at environments/example.json. All of the available configuration options are listed there, however an explanation of each is given below. If you wish to leave any of the values at their default values, simply do not include them in your overrides. All config options below go in the override_attributes section of your json file and are provided below in the form of "key_name": "default_value".
 
-**user** - The user which the popHealth code will be placed under. (Default: popHealth)
+    # The user which the popHealth code will be placed under.
+    "user": "popHealth"
 
-**ruby_version** - The version of ruby which will be installed and used for running rails on the server. (Default: 1.9.3-p484)
+    # The version of ruby which will be installed and used for running rails on the server.
+    "ruby_version":  "1.9.3-p484"
 
-**passenger_version**: The version of [phusion passenger](https://www.phusionpassenger.com/) which will be installed and used. (Default: 3.0.18)
+    # The version of phusion passenger which will be installed and used.
+    "passenger_version": "3.0.18"
 
-**git_repository**: The git repository from which the popHealth source will be pulled from (Default: https://github.com/popHealth/popHealth.git)
+    # The git repository from which the popHealth source will be pulled from.
+    "git_repository": "https://github.com/popHealth/popHealth.git"
 
-**branch**: The branch from which the code will be pulled from on the specified site. (Default: master)
+    # The branch from which the code will be pulled from on the specified site.
+    "branch": "master"
 
-**servername**: The URL at which the site will be accessed at. (Default: localhost)
+    # The URL at which the site will be accessed at.
+    "servername": "localhost"
 
-**environment**: The mode which rails should run in, either development or production. (Default: production)
+    # The mode which rails should run in, either development or production.
+    "environment": "production"
 
-**enable_cron**: Enable a cronjob which will run chef-solo hourly to pull the latest code from git. (Default: false)
+    # Enable a cronjob which will run chef-solo hourly to pull the latest code from git.
+    "enable_cron": false
 
 Troubleshooting
 -----
