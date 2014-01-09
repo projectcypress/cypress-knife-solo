@@ -8,6 +8,12 @@ Getting Started
 
 This repository is designed to allow a user to easily install popHealth on a remote server using knife solo. In order to use this repository, run the following commands.
 
+    # Clone the repository into your directory of choice
+    git clone https://github.com/rbclark/popHealth-knife-solo.git
+    
+    # cd into the directory
+    cd popHealth-knife-solo
+
     # Install knife-solo and berkshelf
     bundle install
 
