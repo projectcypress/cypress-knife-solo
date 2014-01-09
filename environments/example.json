@@ -1,0 +1,20 @@
+{
+  "name": "example",
+  "description": "An example environment with most of the configuration options for popHealth included.",
+  "cookbook_versions": {},
+  "json_class": "Chef::Environment",
+  "chef_type": "environment",
+  "default_attributes": {},
+  "override_attributes": {
+    "popHealth": {
+      "user":"popHealth",
+      "git_repository": "https://github.com/rbclark/popHealth.git",
+      "branch":"master",
+      "ruby_version":"1.9.3-p484",
+      "passenger_version":"3.0.18",
+      "servername":"localhost",
+      "environment":"production",
+      "enable_cron": false
+    }
+  }
+}
