@@ -34,10 +34,10 @@ Once you are finished setting up the environment file you can pass it in by appe
     "user": "popHealth",
 
     # The version of ruby which will be installed and used for running rails on the server.
-    "ruby_version":  "1.9.3-p484",
+    "ruby_version":  "2.0.0-p353",
 
     # The version of phusion passenger which will be installed and used.
-    "passenger_version": "3.0.18",
+    "passenger_version": "4.0.35",
 
     # The git repository from which the popHealth source will be pulled from.
     "git_repository": "https://github.com/popHealth/popHealth.git",

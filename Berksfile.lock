@@ -3,7 +3,7 @@
     "popHealth": {
       "locked_version": "0.2.0",
       "git": "https://github.com/rbclark/popHealth-recipe.git",
-      "ref": "45ff0d23e9eafe83e80cd78428b1dd2eb2facd9f"
+      "ref": "9622ecc3e9380e62bd80160fa85e309935e74ffd"
     },
     "rvm": {
       "locked_version": "0.9.1",
