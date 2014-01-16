@@ -14,7 +14,22 @@
       "passenger_version":"3.0.18",
       "servername":"localhost",
       "environment":"production",
-      "enable_cron": false
+      "enable_cron": false,
+      "app_config": {
+        "idle_timeout_enabled" : true,
+        "idle_timeout" : 300000,
+        "default_user_staff_role" : true,
+        "default_user_approved" : true,
+        "logout_enabled" : true,
+        "edit_account_enabled" : true,
+        "allow_user_update" : true,
+        "patient_management_enabled" : true,
+        "practice_name" : "General Hospital",
+        "value_sets" : {
+          "ticket_url" : "https://vsac.nlm.nih.gov/vsac/ws/Ticket",
+          "api_url" : "https://vsac.nlm.nih.gov/vsac/ws/RetrieveValueSet"
+        }
+      }
     }
   }
 }
