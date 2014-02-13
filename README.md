@@ -95,7 +95,7 @@ Setting the Proxy
 
 If you are trying to push to a corporate environment which requires a proxy, then there are two ways to set this.
 
-#### 1. Setting the proxy on a provisioning box with the same proxy settings as the one which you are provisioning.
+#### 1. Setting the proxy for a remote box with the same proxy as your local machine.
 
 If you already use the same proxy on your local box, then all you need to do is set the http_proxy and https_proxy environment variables. Once these are set you will then be able to run the provisioner as normal and it will automatically detect your proxy settings. 
 
@@ -104,7 +104,7 @@ In order to set the environment variables, simply run the two commands below in 
     export http_proxy="http://your-http-proxy.org:80"
     export https_proxy="http://your-https-proxy.org:80"
 
-#### 2. Setting a different proxy for your remote box than your provisioning box.
+#### 2. Setting a different proxy for your remote box than your local box.
 
 If you need to set a different proxy for the remote box, just directly edit the .chef/knife.rb file and change the lines below to reflect your proxy settings.
 
