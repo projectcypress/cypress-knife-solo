@@ -3,7 +3,7 @@
     "popHealth": {
       "locked_version": "0.2.0",
       "git": "https://github.com/rbclark/popHealth-recipe.git",
-      "ref": "9622ecc3e9380e62bd80160fa85e309935e74ffd"
+      "ref": "eac2d433c4e60c021c56667d4a59d898b59cf37b"
     },
     "rvm": {
       "locked_version": "0.9.1",
@@ -14,43 +14,43 @@
       "locked_version": "0.1.10"
     },
     "apt": {
-      "locked_version": "2.3.0"
+      "locked_version": "2.3.8"
     },
     "git": {
-      "locked_version": "2.7.0"
+      "locked_version": "2.9.0"
     },
     "dmg": {
-      "locked_version": "2.0.8"
+      "locked_version": "2.1.4"
     },
     "build-essential": {
       "locked_version": "1.4.2"
     },
-    "yum": {
-      "locked_version": "2.4.2"
-    },
     "windows": {
-      "locked_version": "1.11.0"
+      "locked_version": "1.30.0"
     },
     "chef_handler": {
       "locked_version": "1.1.4"
     },
     "runit": {
-      "locked_version": "1.4.0"
+      "locked_version": "1.5.8"
+    },
+    "yum": {
+      "locked_version": "3.1.0"
+    },
+    "yum-epel": {
+      "locked_version": "0.3.2"
     },
     "fail2ban": {
-      "locked_version": "2.0.0"
+      "locked_version": "2.1.2"
     },
     "firewall": {
       "locked_version": "0.11.2"
     },
     "sudo": {
-      "locked_version": "2.2.2"
+      "locked_version": "2.3.0"
     },
     "java": {
-      "locked_version": "1.15.4"
-    },
-    "aws": {
-      "locked_version": "1.0.0"
+      "locked_version": "1.19.2"
     },
     "chef_gem": {
       "locked_version": "0.1.0"
