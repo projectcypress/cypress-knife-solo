@@ -1,0 +1,9 @@
+{
+  "name": "popHealth-cron",
+  "chef_type": "role",
+  "json_class": "Chef::Role",
+  "description": "Sets up a popHealth server with a cronjob to update the code.",
+  "run_list": [
+    "recipe[apt]", "recipe[git]", "recipe[popHealth::default]", "recipe[popHealth::cron]"
+  ]
+}
