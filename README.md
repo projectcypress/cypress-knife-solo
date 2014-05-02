@@ -17,9 +17,6 @@ This repository is designed to allow a user to easily install popHealth on a rem
     # Install knife-solo and berkshelf
     bundle install
 
-    # Download required cookbooks
-    bundle exec berks install -p cookbooks/
-
     # Bootstrap the node with the popHealth role (This will install chef, copy required cookbooks, and then run the popHealth role)
     bundle exec knife solo bootstrap username@ip-address -r role[popHealth]
 
@@ -110,6 +107,22 @@ If you need to set a different proxy for the remote box, just directly edit the 
 
     http_proxy       ENV['http_proxy']
     https_proxy      ENV['https_proxy']
+
+Additional Development Options
+-----
+
+If you wish to checkout the recipes to the cookbooks folder and then run remotely from that folder instead of having berkshelf download the dependencies when you run the script, you can do this by following these steps:
+
+    # Download required cookbooks
+    # Note that this will fail if the cookbooks directory already exists.
+    # In this case you may either delete the directory and regenerate it or just use the current cookbooks.
+    bundle exec berks vendor cookbooks/
+
+Then pass the --no-berkshelf flag to the bootstrap command above, like so:
+
+    bundle exec knife solo bootstrap username@ip-address -r role[popHealth] --no-berkshelf
+
+This will force knife to use the cookbooks located in the cookbooks directory instead of downloading them before runtime. This is convenient for times where you would like to test how changes to a specific cookbook will affect the knife-solo run.
 
 Troubleshooting
 -----
