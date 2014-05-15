@@ -108,6 +108,28 @@ If you need to set a different proxy for the remote box, just directly edit the 
     http_proxy       ENV['http_proxy']
     https_proxy      ENV['https_proxy']
 
+#### 3. If the above options cause problems, this way may help.
+
+First, SSH into the machine which you are provisioning and setup the in your .bash_profile, normally located in /home/username/.bash_profile. If the file doesn't exist then go ahead and create it.
+
+    export http_proxy="http://your-proxy.company.org:80"
+    export https_proxy="http://your-proxy.company.org:80"
+    export HTTP_PROXY="http://your-proxy.company.org:80"
+    export HTTPS_PROXY="http://your-proxy.company.org:80"
+
+Next, modify your knife command to include the path to the bash profile:
+
+    --startup-script /path/to/.bash_profile
+
+In order to force chef to maintain the bash profile settings, you will need to also add the following which preserves your environment when the sudo command is run:
+
+    --sudo-command "sudo -E"
+
+Also note that if you end up having errors with SSL verification, it may help to run:
+
+    sudo apt-get remove --purge ca-certificates 
+    sudo apt-get install ca-certificates
+
 Additional Development Options
 -----
 
