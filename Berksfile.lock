@@ -1,7 +1,7 @@
 DEPENDENCIES
   popHealth
     git: https://github.com/pophealth/popHealth-recipe.git
-    revision: 5a19b9aa8904d71d326a19d1e7b5331ca23a5530
+    revision: 338b48ae5a0e1cba38b48b49f48a9dcdc010b12e
 
 GRAPH
   apt (2.4.0)
