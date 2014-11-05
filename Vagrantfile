@@ -6,7 +6,7 @@ Vagrant.configure("2") do |config|
   # options are documented and commented below. For a complete reference,
   # please see the online documentation at vagrantup.com.
 
-  config.vm.hostname = "popHealth-solo-berkshelf"
+  config.vm.hostname = "cypress-solo-berkshelf"
 
   # Every Vagrant virtual environment requires a box to build off of.
   config.vm.box = "Berkshelf-CentOS-6.3-x86_64-minimal"
@@ -80,7 +80,7 @@ Vagrant.configure("2") do |config|
     }
 
     chef.run_list = [
-        "recipe[popHealth-solo::default]"
+        "recipe[cypress-solo::default]"
     ]
   end
 end

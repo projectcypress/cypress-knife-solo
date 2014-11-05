@@ -1,34 +1,34 @@
-popHealth-knife-solo
+cypress-knife-solo
 ====================
 
-Repository for easily installing popHealth without a Chef-Server.
+Repository for easily installing cypress without a Chef-Server.
 
 Getting Started
 -----
 
-This repository is designed to allow a user to easily install popHealth on a remote server using knife solo. In order to use this repository, run the following commands.
+This repository is designed to allow a user to easily install cypress on a remote server using knife solo. In order to use this repository, run the following commands.
 
     # Clone the repository into your directory of choice
-    git clone https://github.com/rbclark/popHealth-knife-solo.git
+    git clone https://github.com/rbclark/cypress-knife-solo.git
     
     # cd into the directory
-    cd popHealth-knife-solo
+    cd cypress-knife-solo
 
     # Install knife-solo and berkshelf
     bundle install
 
-    # Bootstrap the node with the popHealth role (This will install chef, copy required cookbooks, and then run the popHealth role)
-    bundle exec knife solo bootstrap username@ip-address -r role[popHealth]
+    # Bootstrap the node with the cypress role (This will install chef, copy required cookbooks, and then run the cypress role)
+    bundle exec knife solo bootstrap username@ip-address -r role[cypress]
 
 Customizing the Install
 -----
 
-If you wish to do additional configuration to the popHealth cookbook, the easiest way to do so is by creating a new environment in the environments folder and setting the configuration options from there. An example of one such configuration is located at environments/example.json. All of the available configuration options are listed there, however an explanation of each is given below. If you wish to leave any of the values at their default values, simply do not include them in your overrides. All config options below go in the override_attributes section of your json file and are provided below in the form of "key_name": "default_value".
+If you wish to do additional configuration to the cypress cookbook, the easiest way to do so is by creating a new environment in the environments folder and setting the configuration options from there. An example of one such configuration is located at environments/example.json. All of the available configuration options are listed there, however an explanation of each is given below. If you wish to leave any of the values at their default values, simply do not include them in your overrides. All config options below go in the override_attributes section of your json file and are provided below in the form of "key_name": "default_value".
 
 Once you are finished setting up the environment file you can pass it in by appending -E environmentName to your command, where environmentName is the name of the file which you created in the environments folder, without the file ending.
 
-    # The user which the popHealth code will be placed under.
-    "user": "popHealth",
+    # The user which the cypress code will be placed under.
+    "user": "cypress",
 
     # The version of ruby which will be installed and used for running rails on the server.
     "ruby_version":  "2.0.0-p353",
@@ -36,8 +36,8 @@ Once you are finished setting up the environment file you can pass it in by appe
     # The version of phusion passenger which will be installed and used.
     "passenger_version": "4.0.35",
 
-    # The git repository from which the popHealth source will be pulled from.
-    "git_repository": "https://github.com/pophealth/popHealth.git",
+    # The git repository from which the cypress source will be pulled from.
+    "git_repository": "https://github.com/cypress/cypress.git",
 
     # The branch from which the code will be pulled from on the specified site.
     "branch": "master",
@@ -51,7 +51,7 @@ Once you are finished setting up the environment file you can pass it in by appe
     # Enable a cronjob which will run chef-solo hourly to pull the latest code from git.
     "enable_cron": false,
 
-    # The following json block contains elements used to configure the config/popHealth.yml config file.
+    # The following json block contains elements used to configure the config/cypress.yml config file.
     "app_config": {
         
         # Should a user be logged out for inactivity?
@@ -142,7 +142,7 @@ If you wish to checkout the recipes to the cookbooks folder and then run remotel
 
 Then pass the --no-berkshelf flag to the bootstrap command above, like so:
 
-    bundle exec knife solo bootstrap username@ip-address -r role[popHealth] --no-berkshelf
+    bundle exec knife solo bootstrap username@ip-address -r role[cypress] --no-berkshelf
 
 This will force knife to use the cookbooks located in the cookbooks directory instead of downloading them before runtime. This is convenient for times where you would like to test how changes to a specific cookbook will affect the knife-solo run.
 

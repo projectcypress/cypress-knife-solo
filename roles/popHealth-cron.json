@@ -1,9 +1,9 @@
 {
-  "name": "popHealth-cron",
+  "name": "cypress-cron",
   "chef_type": "role",
   "json_class": "Chef::Role",
-  "description": "Sets up a popHealth server with a cronjob to update the code.",
+  "description": "Sets up a cypress server with a cronjob to update the code.",
   "run_list": [
-    "recipe[apt]", "recipe[git]", "recipe[popHealth::default]", "recipe[popHealth::cron]"
+    "recipe[apt]", "recipe[git]", "recipe[cypress::default]", "recipe[cypress::cron]"
   ]
 }

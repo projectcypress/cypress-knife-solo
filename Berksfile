@@ -1,3 +1,3 @@
 source "http://api.berkshelf.com"
 
-cookbook 'popHealth', git: 'https://github.com/pophealth/popHealth-recipe.git'
+cookbook 'cypress', git: 'https://github.com/okeefm/cypress-recipe.git'

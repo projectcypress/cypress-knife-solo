@@ -1,9 +1,9 @@
 {
-  "name": "popHealth",
+  "name": "cypress",
   "chef_type": "role",
   "json_class": "Chef::Role",
-  "description": "Sets up a popHealth server.",
+  "description": "Sets up a cypress server.",
   "run_list": [
-    "recipe[apt]", "recipe[git]", "recipe[popHealth::default]"
+    "recipe[apt]", "recipe[git]", "recipe[cypress::default]"
   ]
 }
