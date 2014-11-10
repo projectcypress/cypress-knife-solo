@@ -37,7 +37,7 @@ Once you are finished setting up the environment file you can pass it in by appe
     "passenger_version": "4.0.35",
 
     # The git repository from which the cypress source will be pulled from.
-    "git_repository": "https://github.com/cypress/cypress.git",
+    "git_repository": "https://github.com/projectcypress/cypress.git",
 
     # The branch from which the code will be pulled from on the specified site.
     "branch": "master",
