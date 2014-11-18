@@ -1,7 +1,7 @@
 DEPENDENCIES
   cypress
     git: https://github.com/okeefm/cypress-recipe.git
-    revision: 5f459c74e4f05ffa6f0e73c72d5220c4a6218562
+    revision: 86c8159800ecb394d46aef3316f5db419dda8120
 
 GRAPH
   apt (2.6.0)
