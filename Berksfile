@@ -1,3 +1,3 @@
-source "http://api.berkshelf.com"
+source "https://supermarket.chef.io"
 
-cookbook 'cypress', git: 'https://github.com/okeefm/cypress-recipe.git'
+cookbook 'cypress', git: 'https://github.com/projectcypress/cypress-recipe.git'
