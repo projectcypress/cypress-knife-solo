@@ -8,8 +8,5 @@
 *.un~
 /cookbooks
 /nodes
-# Bundler
-Gemfile.lock
 bin/*
 .bundle/*
-
